@@ -22,3 +22,5 @@ function toggleModal() {
 // тогда вызов будет
 cardButton.addEventListener('click', toggleModal); //  когда случается клик по кнопке cardButton, вызываем функцию toggleModal
 close.addEventListener('click', toggleModal); //  когда случается клик по кнопке сlose, вызываем функцию toggleModal
+
+new WOW().init(); // инициализируем библиотеку wow.js - теперь можно анимировать карточки через wow вместо animated
