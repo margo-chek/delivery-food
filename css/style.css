@@ -332,6 +332,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+    display: none; /* изначально скрыт */
+}
+
+.is-open {
     display: flex;
 }
 
@@ -345,11 +349,12 @@ body {
 .modal-dialog {
     max-width: 780px;
     width: 95%;
-    min-height: 552px;
+    /* min-height: 552px; */
     background: #FFF;
     border-radius: 5px;
     margin: auto;
     padding: 40px 45px;  /* пишем p40-45 */
+    overflow-y: auto; /* если переполнится, то появится ертикальная прокрутка */
 }
 
 .modal-title {
@@ -366,10 +371,21 @@ body {
     width: 45px;
 }
 
+.modal-body {
+    margin-bottom: 53px;
+}
+
 .food-row {
     display: flex;
     align-items: center; /*  выравниваем по центру по вертикали */
     justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    /* margin-bottom: 15px; */
+}
+
+.food-row:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .food-name {
@@ -406,6 +422,30 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 0 13px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+    margin-bottom: 41px;
+}
+
+.modal-price-tag {
+    background: #262626;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FAFAFA;
+    width: 106px;
+    height: 53px;
+    padding: 15px 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
 }
 
 @media (max-width: 1366px) { /*если ширина экрана < 1366px*/
