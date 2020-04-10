@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Food - доставка еды на дом</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <input type="text" class="input input-address" placeholder="Адрес доставки">
+            <div class="buttons">
+                <button class="button button-primary">
+                    <img src="img/user.svg" alt="user" class="button-icon">
+                    <span>Войти</span>
+                </button>
+                <button class="button">
+                    <img src="img/basket.svg" alt="basket" class="button-icon">
+                    <span>Корзина</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="promo">
+                <h1 class="promo-title">Онлайн-сервис<br />доставки еды на дом</h1>
+                <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+            </section>
+
+            <section class="restaurants">
+                <div class="section-heading">
+                    <h2 class="section-title">Рестораны</h2>
+                    <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
+                </div>
+                <div class="cards">
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-pizza-plus.jpg" alt="image-pizza-plus" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">Пицца плюс</h3>
+                                <span class="tag card-tag">50 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 900 ₽</div>
+                                <div class="category">Пицца</div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->  <!-- // для этого ввести |.c  сразу после введенного класса, например, .card|c -->
+
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-tanuki.jpg" alt="image-tanuki" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">Тануки</h3>
+                                <span class="tag card-tag">60 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 1&nbsp;200 ₽</div> <!-- &nbsp; неразрывный пробел - браузер покажет пробел, но при переносе не разобъет  -->
+                                <!-- <div class="price">От&nbsp;1&nbsp;200&nbsp;₽</div> чтобы весь ценник не разбивался  -->
+                                <div class="category">Суши, роллы </div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->
+
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-food-band.jpg" alt="image-food-band" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">FoodBand</h3>
+                                <span class="tag card-tag">40 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 450 ₽</div>
+                                <div class="category">Пицца </div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->
+
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-pizza-greedy.jpg" alt="image-pizza-greedy" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">Жадина-пицца</h3>
+                                <span class="tag card-tag">55 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 500 ₽</div>
+                                <div class="category">Пицца </div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->
+
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-point-food.jpg" alt="image-point-food" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">Точка еды</h3>
+                                <span class="tag card-tag">75 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 1000 ₽</div>
+                                <div class="category">Русская кухня</div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->
+
+                    <a href="restaurant.html" class="card">
+                        <img src="img/image-pizza-burger.jpg" alt="image-pizza-burger" сlass="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title">PizzaBurger</h3>
+                                <span class="tag card-tag">45 мин</span>
+                            </div>
+                            <!-- /.card-heading -->
+                            <div class="card-info">
+                                <div class="rating">
+                                    <img src="img/rating.svg" alt="rating">
+                                    <span class="ball">4.5</span>
+                                </div>
+                                <div class="price">От 700 ₽</div>
+                                <div class="category">Пицца</div>
+                            </div>
+                            <!-- /.card-info -->
+                        </div>
+                        <!-- /.card-text -->
+                    </a>
+                    <!-- /.card  -->
+
+                </div>
+                <!-- /.cards -->
+            </section>
+        
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+                    <nav class="footer-nav">
+                        <a href="#" class="footer-link">Ресторанам</a>
+                        <a href="#" class="footer-link">Курьерам</a>
+                        <a href="#" class="footer-link">Пресс-центр</a>
+                        <a href="#" class="footer-link">Контакты</a>
+                    </nav>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="img/icon-instagram.svg" alt="icon-instagram"></a>
+                        <a href="#" class="social-link"><img src="img/icon-fb.svg" alt="icon-facebook"></a>
+                        <a href="#" class="social-link"><img src="img/icon-vk.svg" alt="icon-vk"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

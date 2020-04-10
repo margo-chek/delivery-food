@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+*, *::before, *::after {
+      box-sizing: border-box;
+}
+
+body {
+    /* padding: 44px 120px 60px 120px; */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 44px;
+}
+
+.container {
+    max-width: 1200px; /* максимальная ширина */
+    margin: auto; /* выравниваем по центру */
+}
+
+.header {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* margin-bottom: 30%; */
+}
+
+/* .logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+} */
+
+.input {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    color: #BFBFBF;
+    background: #FFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+}
+
+.input-address {
+    height: 40px;
+    flex: 0.8;  /* занимает 80% свободного места // вместо фикрированной ширины  width: 690px; */
+    background-image: url(../img/home.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+    padding: 8px 12px 8px 32px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding: 8px 16px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    background: #FFF;
+    color: #595959;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+}
+
+.button-primary {
+    background: #1890FF;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.button-icon {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.button-card-text {
+    margin-right: 10px;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    /* opacity: 0.66; */
+}
+
+.promo {
+    color: #302C34;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url(../img/svetik.png) no-repeat top right -200px;
+    /* background: #FFF1B8 url(../img/pngtree-flying-in-the-airpizza-and-sunset-creative-material-design-png-image_3600573.jpg) no-repeat top 50px right -100px / 800px; 
+    // top 50px  // сверху
+    right -100px // справа
+    / 800px  // размер картинки*/
+    border-radius: 10px;
+    padding: 68px 70px;
+    margin-bottom: 56px;
+}
+
+.promo-title {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    margin: 0;
+}
+
+.promo-text {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 538px;
+    margin-top: 15px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    /* justify-content: space-between; */
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin-right: 30px;
+}
+
+.input-search {
+    height: 34px;
+    width: 306px;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+    padding: 5px 12px 5px 32px;
+    margin-left: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden; /* чтобы скругление появилось */
+    margin-bottom: 30px;
+    flex-basis: 31%; /* занимает 31% относительно контейнера // вместо фикрированной ширины  max-width: 385px; */
+    text-decoration: none;
+}
+
+.card-image {
+    border-radius: 7px 7px 0px 0px;
+    height: 212px;
+    max-width: 384px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px 24px 34px 24px;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    color: #000;
+}
+
+.card-title-reg {
+    font-weight: 400;
+}
+
+.card-tag {
+    background: #262626;
+    border-radius: 2px;
+    font-family: SF Pro Display;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    width: 55px;
+    height: 22px;
+    padding: 1px 8px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    flex-wrap: wrap; /* если текст не вмещается, то переносим по словам */
+    /* margin-bottom: 24px; */
+}
+
+/* .ingredients {
+    margin-bottom: 24px;
+} */
+
+.card-buttons {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    margin-top: 24px;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    color: #000;
+    margin-left: 32px;
+}
+
+.rating {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    color: #FFC107;
+    margin-right: 26px;
+}
+
+.price, .category {
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    color: #8C8C8C;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.price::after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: #8C8C8C;
+    display: inline-block; /* чтобы элемент появился */
+    border-radius: 50%; /* скругление, без этого был квадрат */
+    vertical-align: middle; /* посередине разместим */
+    margin-left: 10px;
+}
+
+.category {
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    max-width: 150px; /* ограничиваем ширину */
+}
+
+.ingredients {
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height, or 178% */
+    color: #8C8C8C;  
+    flex-wrap: wrap;  
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+}
+
+.footer-nav {
+    margin: 0 auto 0 35px;
+}
+
+.footer-link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-decoration: none;
+}
+
+.footer-link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+}
+
+.social-link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.modal-dialog {
+    max-width: 780px;
+    width: 95%;
+    min-height: 552px;
+    background: #FFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;  /* пишем p40-45 */
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+}
+
+.close {
+    font-size: 36px;
+    background-color: transparent;
+    height: 45px;
+    width: 45px;
+}
+
+.food-row {
+    display: flex;
+    align-items: center; /*  выравниваем по центру по вертикали */
+    justify-content: space-between;
+}
+
+.food-name {
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    color: #000;
+}
+
+.food-price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    color: #000;
+    margin: 0 47px 0 auto;
+}
+
+.counter-button {
+    width: 39px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #40A9FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #40A9FF;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.counter {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 13px;
+}
+
+@media (max-width: 1366px) { /*если ширина экрана < 1366px*/
+    .container {
+        max-width: 960px;
+    }
+
+    .promo {
+        background-position: center right -300px; /* меняем расположение картинки */
+        background-size: 700px; /* уменьшаем размер картинки */
+    }
+
+    .rating {
+        margin-right: 15px;
+    }
+
+    .price, .category {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .promo {
+        padding: 50px;
+        background-position: center right -200px; /* меняем расположение картинки */
+        background-size: 500px; /* уменьшаем размер картинки */
+    }
+
+    .promo-text {
+        font-size: 18px;
+        min-width: 400px;
+    }
+
+    .card {
+        flex-basis: 49%; /* базовая ширина */
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .input-address {
+        padding-right: 4px;
+    }
+
+    .promo {
+        background-position: bottom 50px right -200px; /* меняем расположение картинки */
+        background-size: 400px; /* уменьшаем размер картинки */
+    }
+
+    .promo-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .promo-text {
+        margin-top: 0;
+        font-size: 16px;
+        min-width: 300px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-info {
+        flex-wrap: wrap;
+    }
+
+    .rating {
+        flex-basis: 100%;
+    }
+
+    .price {
+        margin-right: 6px;
+    }
+    
+    .price::after {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        margin-top: 15px;
+    }
+
+    .input-address {
+        flex: 1; /* растянуть на всю ширину */
+        order: 5; /*поле поиска должно быть последним*/
+        margin-top: 15px;
+    }
+
+    .promo {
+        background-image: none;
+        padding: 30px;
+    }
+
+    .promo-title {
+        margin-bottom: ;
+    }
+
+    .promo-text {
+        min-width: 210px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .card {
+        flex-basis: 100%; /* на всю ширину */
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .card-text {
+        max-width: 384px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-block {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        order: 1;
+        margin-right: 15px;
+    }
+
+    .footer-nav {
+        order: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        order: 2;
+    }
+}
